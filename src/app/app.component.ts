@@ -28,6 +28,10 @@ export class AppComponent {
     this.showHobbies = !this.showHobbies;
   }
 
+  sayHello() {
+    alert("Hola Desde app.component")
+  }
+
   newHobby(hobby:any) {
     //console.log(hobby.value);
     this.hobbies.push(hobby.value);
