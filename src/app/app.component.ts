@@ -40,6 +40,13 @@ export class AppComponent {
     }
   }
 
+  addUser(newUser : any){
+    this.users.push(newUser.value);
+    newUser.value = '';
+    newUser.focus();
+    return false;
+  }
+
   newHobby(hobby:any) {
     //console.log(hobby.value);
     this.hobbies.push(hobby.value);
