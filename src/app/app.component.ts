@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { DataService } from './data.service';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,7 +13,7 @@ export class AppComponent {
   title = 'my-dream-app';
   name : string = "Omid Ernesto Chahuaris Choque";
   age : number = 40;
-  email; // : string ;
+  /*email; // : string ;
   webpage : string;
   hobbies : string[];
   showHobbies : boolean;
@@ -27,7 +29,7 @@ export class AppComponent {
 
   toggleHobbies() {
     this.showHobbies = !this.showHobbies;
-  }
+  }*/
 
   sayHello() {
     alert("Hola Desde app.component")
@@ -48,11 +50,15 @@ export class AppComponent {
     return false;
   }
 
-  newHobby(hobby:any) {
+  /*newHobby(hobby:any) {
     //console.log(hobby.value);
     this.hobbies.push(hobby.value);
     hobby.value = "";
     return false;
-  }
+  }*/
+
+  constructor(private dataService: DataService) {
+  };
+  
 
 }
