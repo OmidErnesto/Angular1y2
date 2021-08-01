@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { DataService } from './data.service';
+import { Post } from './Post';
 
 @Component({
   selector: 'app-root',
@@ -57,8 +58,15 @@ export class AppComponent {
     return false;
   }*/
 
+  posts : Post[] = [];
+  
+
   constructor(private dataService: DataService) {
-  };
+    this.dataService.getData().subscribe(data => {
+      //console.log(data);
+      this.posts = data;
+    });
+  }
   
 
 }
