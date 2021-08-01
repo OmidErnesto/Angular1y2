@@ -14,7 +14,7 @@ export class AppComponent {
   title = 'my-dream-app';
   name : string = "Omid Ernesto Chahuaris Choque";
   age : number = 40;
-  /*email; // : string ;
+  email; // : string ;
   webpage : string;
   hobbies : string[];
   showHobbies : boolean;
@@ -30,7 +30,7 @@ export class AppComponent {
 
   toggleHobbies() {
     this.showHobbies = !this.showHobbies;
-  }*/
+  }
 
   sayHello() {
     alert("Hola Desde app.component")
@@ -51,22 +51,22 @@ export class AppComponent {
     return false;
   }
 
-  /*newHobby(hobby:any) {
+  newHobby(hobby:any) {
     //console.log(hobby.value);
     this.hobbies.push(hobby.value);
     hobby.value = "";
     return false;
-  }*/
+  }
 
   posts : Post[] = [];
   
-
+/*
   constructor(private dataService: DataService) {
     this.dataService.getData().subscribe(data => {
       //console.log(data);
       this.posts = data;
     });
-  }
+  }*/
   
 
 }
