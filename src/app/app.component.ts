@@ -9,7 +9,8 @@ export class AppComponent {
   users = ['ryan','joe','cameron','john'];
   activated = false;
   title = 'my-dream-app';
-  name : string;
+  name : string = "Omid Ernesto Chahuaris Choque";
+  age : number = 40;
   email; // : string ;
   webpage : string;
   hobbies : string[];
